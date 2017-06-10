@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorful Text</title>
+    <style>
+        ul.fd li{
+            margin:0.4em 0;
+        }
+        li{
+            display:list-item;
+        }
+        ul.fd{
+            list-style-position:outside;
+        }
+        ul{
+            list-style-type:disc;
+        }
+        .fd>.s{
+            font-size:0.8em !important;
+        }
+        .fd>.lowlight{
+            color:#8f949a !important;
+        }
+        .fd>.highlight{
+            color:#ff6426 !important;
+        }
+        .fd>.m{
+            font-size:1.2em !important;
+        }
+        .fd>.ok{
+            color:#82c32f;
+        }
+        .fd>.l{
+            font-size:1.4em !important;
+        }
+        .fd>.warning{
+            color:#ffa105 !important;
+        }
+        .fd>.xl{
+            font-size:1.6em !important;
+        }
+        .fd>.danger{
+            color:#d52f12 !important;
+        }
+        .fd>.xxl{
+            font-size:1.8em !important;
+        }
+        .fd>.info{
+            color:#4183c4 !important;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fd">
+        <li>default text color</li>
+        <li class="lowlight s">lowlight text color</li>
+        <li class="highlight">highlight text color</li>
+        <li class="ok m">ok text color</li>
+        <li class="warning l">warning text color</li>
+        <li class="danger xl">danger text color</li>
+        <li class="info xxl">info text color</li>
+    </ul>
+</body>
+</html>
