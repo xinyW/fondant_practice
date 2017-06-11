@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorful Badge</title>
+    <style>
+        .badge.fd,.fd>.badge{
+            line-height:1.4em;
+            height:1.4em;
+            border-radius:0.7em;
+            padding:0 0.4em;
+            display: inline-block;
+            border-width:1px;
+            border-style:solid;
+            font-weight:normal;
+            box-sizing:border-box;
+            margin:0 0.2em;
+            vertical-align:middle;
+        }
+        .badge{
+            color:#5b5b5b !important;
+            background-color: #fff;
+            border-color: #c6c5c6;
+        }
+        ul.fd{
+            list-style-position:outside;
+        }
+        ul{
+            list-style-type:disc;
+        }
+        ul.fd li{
+            margin:0.4em 0;
+        }
+
+        .fd.s{
+            font-size:0.8em !important;
+        }
+        .fd.lowlight{
+            color:#8f949a !important;
+            background-color: #f5f4f5;
+            border-color:#c6c5c6;
+        }
+
+        .fd.m{
+            font-size:1.2em !important;
+        }
+        .fd.highlight{
+            color:#fff !important;
+            background-color: #ff6426;
+            border-color:#fa4800;
+        }
+
+        .fd.l{
+            font-size:1.4em !important;
+        }
+        .fd.ok{
+            color:#fff !important;
+            background-color:#82c32f;
+            border-color:#699d26;
+        }
+
+        .fd>.xl{
+            font-size:1.6em !important;
+        }
+        .badge.warning{
+            color:#fff !important;
+            background-color: #ffa105;
+            border-color:#de8b00;
+        }
+
+        .fd>.xxl{
+            font-size:1.8em !important;
+        }
+        .badge.danger{
+            color:#fff !important;
+            background-color: #d52f12;
+            border-color:#ad260e;
+        }
+        .badge.info{
+            color:#fff !important;
+            background-color: #4283c4;
+            border-color:#3570aa;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fd">
+        <li><span class="fd badge s">s</span></li>
+        <li><span class="fd badge lowlight m">m</span></li>
+        <li><span class="fd badge highlight">11</span></li>
+        <li><span class="fd badge ok l">ok</span></li>
+        <li class="fd"><span class="badge warning xl">2</span></li>
+        <li class="fd"><span class="badge danger xxl">!</span></li>
+        <li class="fd"><span class="badge info">?</span></li>
+    </ul>
+</body>
+</html>
