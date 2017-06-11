@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorful Label</title>
+    <style>
+        .label{
+            color:#5b5b5b !important;
+            background-color: #fff;
+            border-color: #c6c5c6;
+        }
+        li{
+            display: list-item;
+        }
+        ul{
+            list-style-type:disc;
+        }
+        ul.fd{
+            list-style-position:outside;
+        }
+        .label.fd,.fd>.label{
+            border-radius:0.2rem;
+        }
+        ul.fd li{
+            margin:0.4em 0;
+        }
+        .label.fd,.fd>.label{
+            display: inline-block;
+            border-width:1px;
+            border-style: solid;
+            font-weight:normal;
+            box-sizing:border-box;
+            margin:0 0.2em;
+            padding:0.2em 0.8em;
+            vertical-align:middle;
+        }
+        .fd.s{
+            font-size:0.8em !important;
+        }
+        .label.lowlight{
+            color:#8f949a !important;
+            background-color: #f5f4f5;
+            border-color:#c6c5c6;
+        }
+        .label.m{
+            font-size:1.2em !important;
+        }
+        .label.highlight{
+            color:#fff !important;
+            background-color: #ff6426;
+            border-color:#fa4800;
+        }
+        .label.ok{
+            color:#fff !important;
+            background-color: #82c32f;
+            border-color:#699d26;
+        }
+        .label.warning{
+            color:#fff !important;
+            background-color: #ffa105;
+            border-color:#de8b00;
+        }
+        .label.danger{
+            color:#fff !important;
+            background-color: #d52f12;
+            border-color:#ad260e;
+        }
+        .label.info{
+            color:#fff !important;
+            background-color: #4183c4;
+            border-color:#3570aa;
+        }
+    </style>
+</head>
+<body>
+    <ul class="fd">
+        <li><span class="fd label s">default label</span></li>
+        <li><span class="fd label lowlight m">lowlight label</span></li>
+        <li><span class="fd label highlight">highlight label</span></li>
+        <li><span class="fd label ok l">ok label</span></li>
+        <li class="fd"><span class="label warning xl">warning label</span></li>
+        <li class="fd"><span class="label danger xxl">danger label</span></li>
+        <li class="fd"><span class="label info">info label</span></li>
+    </ul>
+</body>
+</html>
