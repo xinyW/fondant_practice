@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gird</title>
+    <style>
+        .row.fd{
+            display: block;
+            box-sizing:border-box;
+        }
+        .row.fd>.col{
+            display: block;
+            float: left;
+            box-sizing: border-box;
+        }
+        .fd>.border{
+            border: 1px solid #dcdbdc;
+        }
+        .row.fd>.col.one{
+            width:8.333333333333334%;
+        }
+        .row.fd>.col.two{
+            width:16.666666666666668%;
+        }
+        .row.fd>.col.three{
+            width:25%;
+        }
+        .row.fd>.col.six{
+            width:50%;
+        }
+        .row.fd.table{
+            display: block;
+            width:100%;
+        }
+        .row.fd.table.five>.col{
+            width:15%;
+        }
+        .row.fd:after{
+            content: "";
+            clear: both;
+            height: 0;
+            display: table;
+            overflow: hidden;
+        }
+        .row.fd.table>.col{
+            padding:1% 1.5%;
+            display:table-cell;
+            vertical-align: middle;
+        }
+        ul.fd.row{
+            padding-left:0;
+            list-style-type:none;
+        }
+        ul.fd{
+            list-style-position:outside;
+        }
+       .row.fd.table.four>.col{
+           width:25%;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="fd row">
+        <div class="col one border">1</div>
+        <div class="col two border">2</div>
+        <div class="col three border">3</div>
+        <div class="col six border">6</div>
+    </div>
+    <div class="fd row table five">
+        <div class="col border">1</div>
+        <div class="col border">1</div>
+        <div class="col border">1</div>
+        <div class="col border">1</div>
+        <div class="col border">1</div>
+    </div>
+    <ul class="fd row table four">
+        <li class="col border">1</li>
+        <li class="col border">2</li>
+        <li class="col border">3</li>
+        <li class="col border">4</li>
+    </ul>
+</body>
+</html>
